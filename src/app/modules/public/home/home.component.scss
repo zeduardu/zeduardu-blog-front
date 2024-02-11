@@ -34,3 +34,20 @@
 .hidden {
   display: none;
 }
+
+.cahgne-list-btn {
+  margin: 15px;
+  padding: 8px 16px;
+}
+
+
+.item {
+  min-width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  margin: 10px;
+  border-radius: 5px;
+}

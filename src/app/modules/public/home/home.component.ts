@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-[x: string]: any;
+  categories: string[] = [
+    "Technology",
+    "Health",
+    "Science",
+    "Business",
+    "Sports",
+    "Fashion",
+    "Food",
+    "Travel",
+    "Art",
+    "Music"
+  ];
 
 }

@@ -1,0 +1,14 @@
+<div class="list-with-scroll">
+  <div class="list" nextPreviousScrollbar #list="nextPreviousScrollbar" [scrollUnit]="scrollUnit">
+    <!-- Inject list of items which display-->
+    <ng-content></ng-content>
+  </div>
+
+  <button class="scroll-button scroll-left" *ngIf="list.isOverflow" [class.disable]="!list.canScrollStart" (click)="list.scroll(-1)">
+    &#8678;
+  </button>
+
+  <button class="scroll-button" *ngIf="list.isOverflow" [class.disable]="!list.canScrollEnd" (click)="list.scroll(1)">
+    &#8680;
+  </button>
+</div>

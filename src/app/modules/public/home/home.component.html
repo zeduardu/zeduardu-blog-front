@@ -1,24 +1,5 @@
 <main class="container">
-  <div class="categories-scroller">
-    <ul class="categories-list">
-      <li class="category">Item 1</li>
-      <li class="category">Item 2</li>
-      <li class="category">Item 3</li>
-      <li class="category">Item 4</li>
-      <li class="category">Item 5</li>
-      <li class="category">Item 6</li>
-      <li class="category">Item 7</li>
-      <li class="category">Item 8</li>
-      <li class="category">Item 9</li>
-      <li class="category">Item 0</li>
-    </ul>
-    <div class="paddles">
-      <button class="left-paddle paddle">
-        <
-      </button>
-      <button class="right-paddle paddle">
-        >
-      </button>
-    </div>
-  </div>
+  <app-next-previous-scroll-bar>
+    <div *ngFor="let i of categories" class="item">{{ i }}</div>
+  </app-next-previous-scroll-bar>
 </main>
