@@ -1,0 +1,36 @@
+.categories-scroller {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden ;
+}
+
+.categories-list {
+  height: 50px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .category {
+    display: inline-block;
+    padding: 1em;
+  }
+}
+
+.paddle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+}
+
+.left-paddle {
+  left: 0;
+}
+
+.right-paddle {
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
