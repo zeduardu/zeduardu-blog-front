@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PublicLayoutComponent } from './layout/public-layout/public-layout.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {DataModule} from "./data/data.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    DataModule
   ],
   providers: [],
   bootstrap: [AppComponent]

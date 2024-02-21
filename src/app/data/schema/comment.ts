@@ -1,9 +1,9 @@
-import { Article } from "./article";
+import { Post } from "./post";
 import { User } from "./user";
 
 export interface Comment {
   id: string;
-  article: Article;
+  article: Post;
   user: User;
   content: string;
   commentDate: Date;
