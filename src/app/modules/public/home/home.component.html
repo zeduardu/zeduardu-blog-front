@@ -2,16 +2,17 @@
   <app-next-previous-scroll-bar>
     <div *ngFor="let i of categories" class="categorie">{{ i }}</div>
   </app-next-previous-scroll-bar>
-  <div class="article-list">
-    <div class="card">
+  <div class="article-list" *ngIf="this.postObservable$ | async as postsList">
+    <div class="card" *ngFor="let post of postsList">
       <div class="card-header">
         <div class="d-flex">
-          <img src="https://picsum.photos/200" class="rounded-circle" width="24px">
-          <div>Autor em Categoria - Fev 17, 2024</div>
+          <img src="https://picsum.photos/200" class="rounded-circle" width="24px" alt="">
+          <div>{{ post.user.name }} em {{ getCategoriesInString(post.categories) }} - {{ formatDateTime(post.publicationDate) }}</div>
         </div>
       </div>
       <div class="card-body">
-        Este artigo relata minha experiencia no mestrado e como foi conduzida minha pesquisa em arquitetura de software.
+        <h5 class="card-title">{{ post.title }}</h5>
+        {{ post.summary}}
       </div>
     </div>
   </div>
