@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +17,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     imports: [
         CommonModule,
         PublicRoutingModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        NgOptimizedImage
     ]
 })
 export class PublicModule { }

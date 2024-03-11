@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {PublicLayoutComponent} from "./layout/public-layout/public-layout.component";
+import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,11 @@ const routes: Routes = [
         loadChildren: () => import('./modules/public/public.module').then(m => m.PublicModule)
       }
     ]
+  },
+  {
+    path: 'admin',
+    component: AdminLayoutComponent,
+    loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule)
   }
 ];
 

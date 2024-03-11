@@ -36,6 +36,6 @@ export class HomeComponent implements OnInit{
   }
 
   getCategoriesInString(categories: Category[]): string {
-    return categories.map(category => category.name).join(",");
+    return categories.map(category => category.name).join(" | ");
   }
 }
